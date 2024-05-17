@@ -1,3 +1,5 @@
+import Image from "next/image";
+import React from "react"; // Import React if you haven't already
 export default function Sponsors() {
   return (
     <div id="sponsors" className="bg-white py-10 sm:py-10">
@@ -6,15 +8,54 @@ export default function Sponsors() {
           Sponsors
         </h2>
         <div className="flex flex-col flex-wrap justify-center items-center mx-auto gap-4 mt-12">
-          <div className="flex flex-wrap gap-4 justify-center">
-              <a href="https://www.praxisnation.com/" target="_blank" rel="noopener noreferrer">
-                <img
-                  className="h-auto max-h-40 object-contain bg-black hover:cursor-pointer"
-                  src="/logos/praxis2.jpg"
-                  alt="Praxis"
-                />
-              </a>
-              <a href="https://modal.com/" target="_blank" rel="noopener noreferrer">
+          <div className="relative flex flex-wrap gap-4 justify-center">
+            <a href="https://replexica.com/" target="_blank" rel="">
+              <Image
+                className="h-auto max-h-32 object-contain"
+                src="/logos/replexica.png"
+                width={300}
+                height={32}
+                // fill={true}
+                alt="Replexica"
+              />
+            </a>
+            <a href="https://mistral.ai/" target="_blank" rel="">
+              <Image
+                className="h-auto max-h-32 object-contain"
+                src="/logos/mistral.svg"
+                width={300}
+                height={32}
+                alt="mistralai"
+              />
+            </a>
+            <a href="https://algolia.com/" target="_blank" rel="">
+              <Image
+                className="h-auto max-h-32 object-contain"
+                src="/logos/algolia.png"
+                width={300}
+                height={32}
+                alt="Algolia"
+              />
+            </a>
+            <a href="https://www.lewagon.com/barcelona" target="_blank" rel="">
+              <Image
+                className="h-auto max-h-32 object-contain"
+                src="/logos/lewagon.png"
+                width={300}
+                height={32}
+                alt="LeWagon"
+              />
+            </a>
+            <a target="_blank" href="https://hackbcn.com/sponsorship.pdf">
+              <Image
+                className="h-auto max-h-40 object-contain bg-black hover:cursor-pointer"
+                src="/cards/yourcompany.png"
+                width={100}
+                height={32}
+                alt="Your Company"
+              />
+            </a>
+            {/* <a href="https://modal.com/" target="_blank" rel="noopener noreferrer">
                 <img
                   className="h-auto max-h-40 object-contain hover:cursor-pointer"
                   src="/logos/modal2.jpg"
@@ -34,9 +75,9 @@ export default function Sponsors() {
                   src="/logos/ctech2.png"
                   alt="Cornell Tech"
                 />
-              </a>
-            </div>
-
+              </a> */}
+          </div>
+          {/* 
             <div className="flex flex-wrap gap-4 justify-center mt-10">
             <a href="https://www.passes.com/" target="_blank" rel="noopener noreferrer">
                 <img
@@ -181,9 +222,9 @@ export default function Sponsors() {
                 />
               </a>
 
-            </div>
-            
-            <div className="flex flex-wrap gap-4 justify-center">
+            </div> */}
+
+          {/* <div className="flex flex-wrap gap-4 justify-center">
               <a href="https://www.cornell.edu/" target="_blank" rel="noopener noreferrer">
                 <img
                   className="h-auto max-h-32 object-contain hover:cursor-pointer"
@@ -205,10 +246,9 @@ export default function Sponsors() {
                   alt="NYU"
                 />
               </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
   );
 }
-
