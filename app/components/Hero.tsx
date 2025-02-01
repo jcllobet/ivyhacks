@@ -31,8 +31,9 @@ export default function Hero() {
                 </h1>
                 <p className="relative mt-6 text-lg leading-8 text-gray-200 sm:max-w-md lg:max-w-none">
                   <br />
-                  Join us for for the first edition of IvyHacks, at an amazing
-                  venue in NYC, and be part of a thrilling hackathon with plenty
+                  Join us for for the first edition of IvyHacks, 
+                  organized by Columbia University, Cornell Tech, and NYU, 
+                  and be part of a competitive and thrilling hackathon with plenty
                   of prizes, swag and fun.
                   <br />
                   <br />
