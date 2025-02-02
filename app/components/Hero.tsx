@@ -31,9 +31,9 @@ export default function Hero() {
                 </h1>
                 <p className="relative mt-6 text-lg leading-8 text-gray-200 sm:max-w-md lg:max-w-none">
                   <br />
-                  Join us for for the first edition of IvyHacks, at an amazing
-                  venue in NYC, and be part of a thrilling hackathon with plenty
-                  of prizes, swag and fun.
+                  Join us for IvyHacks <br />
+                  Organized by Columbia University, Cornell Tech, and NYU <br />
+                  Be part of a competitive and thrilling hackathon with awesome prizes and fun.
                   <br />
                   <br />
                   Get ready for an unforgettable experience to showcase your AI
@@ -42,7 +42,7 @@ export default function Hero() {
                 <div className="mt-10 flex flex-col sm:flex-row sm:items-center sm:gap-x-6">
                   <ApplyButton />
                   <Link
-                    href="mailto:andrew.siah@columbia.edu"
+                    href="mailto:yilin.meng@columbia.edu"
                     className="text-lg font-semibold leading-6 text-gray-200 hover:text-white z-30 mt-4 sm:mt-0"
                   >
                     Sponsor Us

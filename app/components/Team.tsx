@@ -14,7 +14,6 @@ export default function Team() {
             <div>
               <ul style={{ listStyleType: "none", padding: 0, margin: 0 }}>
                 {[
-                  { firstName: "Andrew", lastName: "Siah" },
                   { firstName: "Jan", lastName: "Carbonell" },
                   { firstName: "Iris", lastName: "Meng" },
                   { firstName: "Sudhanshu", lastName: "Pandey" },
@@ -40,7 +39,7 @@ export default function Team() {
           <div className="w-full sm:w-1/2 mt-6 sm:mt-0">
             Feel free to reach out if you have any questions:
             <br />
-            andrew.siah@columbia.edu
+            yilin.meng@columbia.edu
           </div>
         </div>
       </div>

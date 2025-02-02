@@ -1,35 +1,47 @@
 import DummyPhoto from "public/judges/DummyPhoto.jpg";
+import advaitmaybhatePhoto from "public/judges/advaitmaybhate.png";
+import andrewsiahPhoto from "public/judges/andrewsiah.png";
+import charleselkanPhoto from "public/judges/charleselkan.jpg";
+import charlesfryePhoto from "public/judges/charlesfrye.jpeg";
+import jennyfieldingPhoto from "public/judges/jennyfielding.webp";
+import zoeweilPhoto from "public/judges/zoeweil.png";
+
 
 const members = [
   {
-    name: "Judge 1",
-    description: "Bloomberg, CTO",
-    image: DummyPhoto,
+    name: "Charles Peter Elkan",
+    description: "Computer Science Professor at UCSD",
+    image: charleselkanPhoto,
   },
   {
-    name: "Judge 2",
-    description: "Google, CEO",
-    image: DummyPhoto,
+    name: "Jenny Fielding",
+    description: "Managing Partner & Cofounder at Everywhere Ventures",
+    image: jennyfieldingPhoto,
   },
   {
-    name: "Judge 3",
-    description: "Microsoft, AI Expert",
-    image: DummyPhoto,
+    name: "Andrew Siah",
+    description: "Machine Learning Research at Columbia University",
+    image: andrewsiahPhoto,
+  },
+  // {
+  //   name: "Patrick Zhang",
+  //   description: "CTO at Passes.com",
+  //   image: DummyPhoto,
+  // },
+  {
+    name: "Charles Frye",
+    description: "Neuroscience PhD UC Berkeley, AI Engineer at Modal",
+    image: charlesfryePhoto,
   },
   {
-    name: "Judge 4",
-    description: "Lebron, AI Prompter",
-    image: DummyPhoto,
+    name: "Advait Maybhate",
+    description: "Software Engineer at Warp",
+    image: advaitmaybhatePhoto,
   },
   {
-    name: "Judge 5",
-    description: "J'Dilla, Legendary Producer",
-    image: DummyPhoto,
-  },
-  {
-    name: "Judge 6",
-    description: "Lil bro, some godly dude",
-    image: DummyPhoto,
+    name: "Zoe Weil",
+    description: "Staff Applied Scientist at Etsy",
+    image: zoeweilPhoto,
   },
 ];
 
@@ -45,17 +57,25 @@ export default function Judges() {
         <div className="mx-auto mt-16 max-w-2xl lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {members.map((member) => (
-              <div key={member.name} className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-xl sm:text-2xl font-bold leading-7 text-gray-900">
-                  <span className="h-5 w-12 flex-none text-indigo-600" aria-hidden="true" />
+              <div key={member.name} className="flex flex-col items-center text-center">
+                <dt className="mb-4 text-xl sm:text-2xl font-bold leading-7 text-gray-900">
                   {member.name}
                 </dt>
-                <dd className="mt-2">
-                  <div>
-                    <img src={member.image.src} alt={member.name} width="230" height="230" style={{border: '2px solid black'}} />
+                <dd className="flex flex-col items-center">
+                  <div className="w-[230px] h-[230px] relative rounded-lg overflow-hidden">
+                    <img 
+                      src={member.image.src} 
+                      alt={member.name} 
+                      className="object-cover w-full h-full"
+                    />
                   </div>
-                  <div className="mt-4 flex flex-auto flex-col text-lg leading-7 text-gray-800">
-                    <p className="flex-auto">{member.description}</p>
+                  <div className="mt-4 flex flex-col gap-1">
+                    <p className="text-lg font-medium text-gray-900">
+                      {member.description.split(" at ")[0]}
+                    </p>
+                    <p className="text-lg text-gray-600">
+                      {member.description.split(" at ")[1]}
+                    </p>
                   </div>
                 </dd>
               </div>
