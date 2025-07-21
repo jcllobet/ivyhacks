@@ -34,8 +34,8 @@ export default function Home() {
         <Sponsors />
         <Judges />
         <WhyJoin />
-        <Dates />
         <Schedule />
+        <Dates />
         <SignupCTA />
         <Team />
         <Footer />

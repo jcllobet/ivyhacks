@@ -9,28 +9,10 @@ export default function Team() {
         </div>
         <div className="flex flex-col sm:flex-row mt-6 text-gray-800 text-lg">
           <div className="w-full sm:w-1/2 mr-8">
-            <div>IvyHacks is brought to you by:</div>
+            <div>IvyHacks is brought to you by volunteer students from Columbia, Cornell Tech and NYU.</div>
             <br />
             <div>
-              <ul style={{ listStyleType: "none", padding: 0, margin: 0 }}>
-                {[
-                  { firstName: "Jan", lastName: "Carbonell" },
-                  { firstName: "Iris", lastName: "Meng" },
-                  { firstName: "Sudhanshu", lastName: "Pandey" },
-                ].map((name, index) => (
-                  <li
-                    key={index}
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "1fr",
-                      marginBottom: "0.5rem",
-                      marginLeft: "5rem",
-                    }}
-                  >
-                    {name.firstName} {name.lastName}
-                  </li>
-                ))}
-              </ul>
+              <strong>Lead Organizers:</strong> Iris Meng and Sudhanshu Pandey
             </div>
             <br />
             This hackathon wouldn&apos;t be possible without the incredible
