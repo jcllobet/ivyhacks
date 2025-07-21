@@ -32,11 +32,11 @@ export default function Home() {
       <main className="flex min-h-screen flex-col">
         <Hero />
         <Sponsors />
-        <Judges />
         <WhyJoin />
         <Schedule />
         <Dates />
         <SignupCTA />
+        <Judges />
         <Team />
         <Footer />
       </main>
