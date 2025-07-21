@@ -1,4 +1,4 @@
-import DummyPhoto from "public/judges/DummyPhoto.jpg";
+import PatrickZhang from "public/judges/patrickzhang.png";
 import advaitmaybhatePhoto from "public/judges/advaitmaybhate.png";
 import andrewsiahPhoto from "public/judges/andrewsiah.png";
 import charleselkanPhoto from "public/judges/charleselkan.jpg";
@@ -38,6 +38,11 @@ const members = [
     name: "Jenny Fielding",
     description: "Managing Partner & Cofounder at Everywhere Ventures",
     image: jennyfieldingPhoto,
+  },
+  {
+    name: "Patrick Zhang",
+    description: "CTO at Passes.com",
+    image: PatrickZhang,
   },
   {
     name: "Zoe Weil",
